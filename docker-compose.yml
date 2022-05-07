@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  server:
+    build: .
+    networks:
+      - server
+    ports:
+      - 3000:3000
+    tty: "true"
+
+networks:
+  server:
+    name: redes_network
